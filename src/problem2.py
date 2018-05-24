@@ -410,15 +410,15 @@ def problem2c(x):
     # DONE: 4. Implement and test this function.
     #          Tests have been written for you (above).
     # -------------------------------------------------------------------------
-    number = x
+    n = x
     while True:
-        if is_prime(number):
-            if is_prime(sum_of_digits(number)):
-                return number
+        if is_prime(n):
+            if is_prime(sum_of_digits(n)):
+                return n
             else:
-                number = number + 1
+                n = n + 1
         else:
-            number = number + 1
+            n = n + 1
 
 
 
