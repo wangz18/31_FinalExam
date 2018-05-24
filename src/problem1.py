@@ -23,6 +23,8 @@ def main():
     run_test_problem1b()
 
 
+
+
 def run_test_problem1a():
     """ Tests the  problem1a   function. """
     ####################################################################
@@ -176,9 +178,23 @@ def problem1b(numbers):
       :type numbers:  [int]
     """
     # -------------------------------------------------------------------------
-    # TODO: 3. Implement and test this function.
+    # DONE: 3. Implement and test this function.
     #          Tests have been written for you (above).
     # -------------------------------------------------------------------------
+    sum = 0
+    n = len(numbers) // 3
+    for k in range(len(numbers)):
+        if n %2 ==0:
+
+            a = n // 2
+            if k >=3*a-(n/2-1)-1 and k<= 3*a + n/2-1:
+                sum = sum + numbers[k]
+        else:
+            b=len(numbers)//2+1
+            if k >= b-(n//2)-1 and k <= b+(n//2)-1:
+                sum = sum + numbers[k]
+
+    return sum
 
 
 
