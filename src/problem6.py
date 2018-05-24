@@ -96,10 +96,9 @@ And this one for n=14:
                print(space*' ',end='')
             if j+1<=9:
                print(j + 1, end='')
-
-
         if k >0:
-            print('*'*(k+1))
+            print('*'*(k+1) , end= '')
+
 
 
 
